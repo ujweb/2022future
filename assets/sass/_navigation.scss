@@ -1,0 +1,47 @@
+nav {
+    @media screen and (min-width: 768px) {
+        display: block !important;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        padding-top: 70px;
+        background-color: $yellow;
+        z-index: 3;
+    }
+    ul {
+        @include list(0, 0, none);
+        font-size: 0;
+        li {
+            @include transition(margin 0.3s);
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            + li {
+                @media screen and (min-width: 768px) {
+                    margin-left: 20px;
+                }
+                @media screen and (max-width: 767px) {
+                    margin-top: 20px;
+                }
+            }
+            &:last-child {
+                @media screen and (max-width: 767px) {
+                    margin-top: 30px;
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                padding: 10px;
+                font-size: $fs18;
+                cursor: pointer;
+            }
+        }
+    }
+}

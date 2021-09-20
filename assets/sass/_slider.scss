@@ -1,0 +1,85 @@
+.slider {
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 30px;
+    }
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 40px;
+    }
+    .slick-arrow {
+        position: absolute;
+        padding: 0;
+        color: $white;
+        font-size: $init*50;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        @include opacity(0.4);
+        @include transition(opacity 0.3s);
+        @media screen and (max-width: 1023px) {
+            top: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            top: 50%;
+            @include translateY(-50%);
+        }
+        &:hover {
+            @include opacity(1);
+        }
+        i.icon {
+            display: block;
+        }
+        &.slick-prev {
+            @media screen and (max-width: 359px) {
+                left: 20px;
+            }
+            @media screen and (max-width: 1023px) and (min-width: 360px) {
+                left: 30px;
+            }
+            @media screen and (min-width: 1024px) {
+                right: calc(100% + 5px);
+            }
+        }
+        &.slick-next {
+            @media screen and (max-width: 359px) {
+                right: 20px;
+            }
+            @media screen and (max-width: 1023px) and (min-width: 360px) {
+                right: 30px;
+            }
+            @media screen and (min-width: 1024px) {
+                left: calc(100% + 5px);
+            }
+        }
+    }
+}
+
+.card-group {
+	@media screen and (min-width: 360px) and (max-width: 767px) {
+        margin-left: -($gutter-width + 20) / 2;
+        margin-right: -($gutter-width + 20) / 2;
+    }
+	@media screen and (max-width: 359px) {
+		margin-left: -($gutter-width / 2);
+		margin-right: -($gutter-width / 2);
+	}
+    .card-item {
+        padding: 0 15px;
+        a {
+            display: block;
+            padding: 15px;
+            background-color: $white;
+            > span {
+                display: block;
+                &.card-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+                &.card-title {
+                    padding: 15px 0;
+                    font-size: $fs18;
+                }
+            }
+        }
+    }
+}

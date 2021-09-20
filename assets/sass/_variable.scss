@@ -1,0 +1,80 @@
+//
+$container: 1170px;
+$init: 0.0625rem;   //1px
+
+$fs32: $init*32;
+$fs28: $init*28;
+$fs24: $init*24;
+$fs22: $init*22;
+$fs20: $init*20;
+$fs18: $init*18;
+$fs16: $init*16;
+
+//
+$h1: $fs32;
+$h2: $fs28;
+$h3: $fs24;
+$h4: $fs22;
+$h5: $fs20;
+$h6: $fs18;
+
+//
+$h1-m: $fs32;
+$h2-m: $fs28;
+$h3-m: $fs24;
+$h4-m: $fs22;
+$h5-m: $fs20;
+$h6-m: $fs18;
+
+//
+$white:         #fff !default; //background
+$gray-100:      #F0F0F0 !default;
+$gray-200:      #C8C8C8 !default;
+$gray-300:      #969696 !default;
+$gray-400:      #393939 !default;
+$gray-500:      #2C2C2C !default;
+$black:         #000 !default;
+
+//
+$blue-100:      #63B3E3;
+$blue-200:      #56A4D8;
+$blue-300:      #4995CD;
+$blue-400:      #3E88C3;
+$blue-500:      #327BB9;
+$blue-600:      #256CAE;
+$blue-700:      #1A5EA4;
+$blue-800:      #0E509A;
+
+$blue-lighten:  #63B3E3;
+$blue:          #4093D1;
+$blue-variant:  #084A95;
+
+//
+$yellow-100:    #FFDA00;
+$yellow-200:    #F9CF06;
+$yellow-300:    #F3B80B;
+$yellow-400:    #EDA010;
+$yellow-500:    #E98F14;
+$yellow-600:    #E57A19;
+$yellow-700:    #E9632D;
+$yellow-800:    #E75128;
+
+$yellow-lighten:#FFE600;
+$yellow:        #F5D121;
+$yellow-variant:#F5A200;
+
+//
+$primary:           $blue !default;
+$primary-variant:   $blue-variant !default;
+
+$secondary:         $yellow !default;
+$secondary-variant: $yellow-variant !default;
+
+//
+$facebook:      #1877f2 !default;
+$line:          #00c200 !default;
+$instagram:     #dd2a7b !default;
+$weibo:         #e6162d !default;
+$rss:           #ff5700 !default;
+$twitter:       #00acee !default;
+$whatapp:       #4fce5d !default;

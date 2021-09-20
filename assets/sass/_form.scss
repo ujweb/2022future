@@ -1,0 +1,69 @@
+.form-customized {
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+    label {
+        display: block;
+        position: relative;
+        font-size: 0;
+        @include user-select(none);
+        cursor: pointer;
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+            @include transition(color 0.3s, background-color 0.3s, opacity 0.3s);
+        }
+        input[type='radio'] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            &:checked ~ .radio-mark {
+                color: $white;
+                background-color: $primary-variant;
+                &::after {
+                    @include opacity(1);
+                }
+            }
+        }
+        &:hover {
+            color: $primary-variant;
+        }
+        .radio-mark {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            background-color: $white;
+            border: 1px solid $primary-variant;
+            @include border-radius(50%);
+            @media screen and (min-width: 360px) {
+                width: 30px;
+                height: 30px;
+            }
+            &::after {
+                @include beforeafter($icon-check, block);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-family: $icomoon-font-family;
+                font-size: 0.75rem;
+                @include opacity(0);
+                @include transition(opacity 0.3s);
+                @include transform(translate(-50%, -50%) scale(.8));
+                @media screen and (min-width: 360px) {
+                    @include transform(translate(-50%, -50%) scale(.9));
+                }
+            }
+        }
+        .value {
+            width: calc(100% - 24px);
+            padding-left: 10px;
+            font-size: 1rem;
+            @media screen and (min-width: 360px) {
+                width: calc(100% - 30px);
+                font-size: $h6;
+            }
+        }
+    }
+}
