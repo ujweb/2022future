@@ -14,179 +14,190 @@
 @import "_form";
 
 main {
-    width: 100%;
-    .index-page & {
-        height: 100%;
-        min-height: 100%;
-    }
-    section {
-        &:not(.opening, .jumbotron) {
-            .container {
-                padding-top: 60px;
-                @media screen and (min-width: 1024px) {
-                    padding-top: 130px;
-                }
-                .index-page & {
-                    padding-bottom: 90px;
-                    @media screen and (min-width: 1024px) {
-                        padding-bottom: 100px;
-                    }
-                }
-                .voting-page & {
-                    padding-bottom: 40px;
-                    @media screen and (min-width: 1024px) {
-                        padding-bottom: 130px;
-                    }
-                }
-            }
-        }
-        &.opening {
-            height: 100%;
-            min-height: 100%;
-            background-color: $yellow-100;
-            @include background-image(linear-gradient(top, $yellow-100 0%, $yellow-100 50%, $blue-variant 50%, $blue-variant 100%));
-            overflow: hidden;
-            img {
-                position: relative;
-                top: 50%;
-                left: 50%;
-                @include translate(-50%, -50%);
-                @media screen and (max-width: 767px) {
-                    height: 72%;
-                    @media (min-aspect-ratio: 375/667) {
-                        height: 85%;
-                    }
-                }
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
-                    height: 90%;
-                }
-                @media screen and (min-width: 1024px) {
-                    width: 150%;
-                }
-                @media screen and (min-width: 1440px) {
-                    width: 125%;
-                }
-                @media screen and (min-width: 1920px) {
-                    width: 100%;
-                }
-            }
-        }
-        &.jumbotron {
-            background-image: url('../images/jumbotron@2x.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            .container {
-                padding-top: 160px;
-                padding-bottom: 90px;
-                @media screen and (min-width: 1024px) {
-                    padding-top: 180px;
-                    padding-bottom: 100px;
-                    }
-            }
-        }
-        &#subscribe {
-            .col-text {
-                ul {
-                    @include list(0, 0, none);
-                    line-height: 1.67;
-                    li {
-                        position: relative;
-                        padding-left: $fs32;
-                        &::before {
-                            @include beforeafter($icon-check, block);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            color: $primary-variant;
-                        	font-family: '#{$icomoon-font-family}';
-                            font-size: 0.8745rem;
-                            line-height: 1.125rem*1.67;
-                        }
-                    }
-                }
-            }
-            .price {
-                > * {
-                    vertical-align: middle;
-                    @extend %typo-weight;
-                }
-            }
-        }
-        &#faq {
-            .faq-title {
-                @extend %typo-weight;
-            }
-        }
-        &.issue {
-            + .issue {
-                border-top: 1px solid $gray-200;
-            }
-            svg {
-                text {
-                    @include transition(fill 0.3s);
-                    &.order {
-                        font-weight: bold;
-                    }
-                }
-                &.issue-1,
-                &.issue-3 {
-                    g.arc {
-                        &:hover {
-                            text {
-                                fill: $primary-variant;
-                            }
-                        }
-                        text {
-                            &.order {
-                                fill: $primary-variant;
-                            }
-                        }
-                    }
-                }
-                &.issue-2 {
-                    g.arc {
-                        &:hover {
-                            text {
-                                fill: $secondary-variant;
-                            }
-                        }
-                        text {
-                            &.order {
-                                fill: $yellow-800;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	width: 100%;
+	.index-page & {
+		height: 100%;
+		min-height: 100%;
+	}
+	section {
+		&:not(.opening, .jumbotron) {
+			.container {
+				padding-top: 60px;
+				@media screen and (min-width: 1024px) {
+					padding-top: 130px;
+				}
+				.index-page & {
+					padding-bottom: 90px;
+					@media screen and (min-width: 1024px) {
+						padding-bottom: 100px;
+					}
+				}
+				.voting-page & {
+					padding-bottom: 40px;
+					@media screen and (min-width: 1024px) {
+						padding-bottom: 130px;
+					}
+				}
+			}
+		}
+		&.opening {
+			height: 100%;
+			min-height: 100%;
+			background-color: $yellow-100;
+			@include background-image(linear-gradient(top, $yellow-100 0%, $yellow-100 50%, $blue-variant 50%, $blue-variant 100%));
+			overflow: hidden;
+			img {
+				position: relative;
+				top: 50%;
+				left: 50%;
+				@include translate(-50%, -50%);
+				@media screen and (max-width: 767px) {
+					height: 72%;
+					@media (min-aspect-ratio: 375/667) {
+						height: 85%;
+					}
+				}
+				@media screen and (min-width: 768px) and (max-width: 1023px) {
+					height: 90%;
+				}
+				@media screen and (min-width: 1024px) {
+					width: 150%;
+				}
+				@media screen and (min-width: 1440px) {
+					width: 125%;
+				}
+				@media screen and (min-width: 1920px) {
+					width: 100%;
+				}
+			}
+		}
+		&.jumbotron {
+			background-image: url('../images/jumbotron@2x.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			.container {
+				padding-top: 160px;
+				padding-bottom: 90px;
+				@media screen and (min-width: 1024px) {
+					padding-top: 180px;
+					padding-bottom: 100px;
+					}
+			}
+		}
+		&#subscribe {
+			.col-text {
+				ul {
+					@include list(0, 0, none);
+					line-height: 1.67;
+					li {
+						position: relative;
+						padding-left: $fs32;
+						&::before {
+							@include beforeafter($icon-check, block);
+							position: absolute;
+							top: 0;
+							left: 0;
+							color: $primary-variant;
+							font-family: '#{$icomoon-font-family}';
+							font-size: 0.8745rem;
+							line-height: 1.125rem*1.67;
+						}
+					}
+				}
+			}
+			.price {
+				> * {
+					vertical-align: middle;
+					@extend %typo-weight;
+				}
+			}
+		}
+		&#faq {
+			.faq-title {
+				@extend %typo-weight;
+			}
+		}
+		&.issue {
+			+ .issue {
+				border-top: 1px solid $gray-200;
+			}
+			.chart {
+				overflow-x: scroll;
+				@media screen and (min-width: 360px) and (max-width: 767px) {
+					margin-left: -($gutter-width + 20) / 2;
+					margin-right: -($gutter-width + 20) / 2;
+				}
+				@media screen and (max-width: 359px) {
+					margin-left: -($gutter-width / 2);
+					margin-right: -($gutter-width / 2);
+				}			
+			}
+			svg {
+				text {
+					@include transition(fill 0.3s);
+					&.order {
+						font-weight: bold;
+					}
+				}
+				&.issue-1,
+				&.issue-3 {
+					g.arc {
+						&:hover {
+							text {
+								fill: $primary-variant;
+							}
+						}
+						text {
+							&.order {
+								fill: $primary-variant;
+							}
+						}
+					}
+				}
+				&.issue-2 {
+					g.arc {
+						&:hover {
+							text {
+								fill: $secondary-variant;
+							}
+						}
+						text {
+							&.order {
+								fill: $yellow-800;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .sponsor-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    @media screen and (min-width: 570px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px 30px;
-    }
-    @media screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .sponsor-item {
-        display: block;
-    }
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+	@media screen and (min-width: 570px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 40px 30px;
+	}
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.sponsor-item {
+		display: block;
+	}
 }
 
 .fix-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: $white;
-    background-color: $yellow-800;
-    z-index: 2;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: $white;
+	background-color: $yellow-800;
+	z-index: 2;
 }

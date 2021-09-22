@@ -67,12 +67,16 @@ var pie = d3.pie().value(function (d) {
 var path = d3
 	.arc()
 	.outerRadius(radius - 100)
-	.innerRadius(0.1);
-
+	.innerRadius(0.1)
+	.startAngle(function(d) { return -d.startAngle; })
+	.endAngle(function(d) { return -d.endAngle; });
+	
 var label = d3
 	.arc()
 	.outerRadius(radius - 60)
-	.innerRadius(radius - 30);
+	.innerRadius(radius - 30)
+	.startAngle(function(d) { return -d.startAngle; })
+	.endAngle(function(d) { return -d.endAngle; });
 
 // 第一題
 var arc1 = g1
@@ -126,7 +130,7 @@ tgroup1.append("text").each(function (d, i) {
 				.attr("x", centroid[0])
 				.attr("y", centroid[1])
 				.attr("dy", "10px")
-				.attr("dx", "-18px")
+				.attr("dx", "-78px")
 				.attr("class", "order")
 				.attr("font-size", "3rem")
 				.text(i+1);
@@ -139,7 +143,7 @@ tgroup1.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.data.key);
 	} else {
 			d3.select(this)
@@ -157,7 +161,7 @@ tgroup1.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "-10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.value + "%");
 	} else {
 			d3.select(this)
@@ -221,7 +225,7 @@ tgroup2.append("text").each(function (d, i) {
 				.attr("x", centroid[0])
 				.attr("y", centroid[1])
 				.attr("dy", "10px")
-				.attr("dx", "-18px")
+				.attr("dx", "-78px")
 				.attr("class", "order")
 				.attr("font-size", "3rem")
 				.text(i+1);
@@ -234,7 +238,7 @@ tgroup2.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.data.key);
 	} else {
 			d3.select(this)
@@ -252,7 +256,7 @@ tgroup2.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "-10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.value + "%");
 	} else {
 			d3.select(this)
@@ -316,7 +320,7 @@ tgroup3.append("text").each(function (d, i) {
 				.attr("x", centroid[0])
 				.attr("y", centroid[1])
 				.attr("dy", "10px")
-				.attr("dx", "-18px")
+				.attr("dx", "-78px")
 				.attr("class", "order")
 				.attr("font-size", "3rem")
 				.text(i+1);
@@ -329,7 +333,7 @@ tgroup3.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.data.key);
 	} else {
 			d3.select(this)
@@ -347,7 +351,7 @@ tgroup3.append("text").each(function (d, i) {
 			.attr("x", centroid[0])
 			.attr("y", centroid[1])
 			.attr("dy", "-10px")
-			.attr("dx", "13px")
+			.attr("dx", "-43px")
 			.text(d.value + "%");
 	} else {
 			d3.select(this)

@@ -1,57 +1,57 @@
 .message {
-    display: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    z-index: 6;
-    .message-wrap {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .message-container {
-        position: relative;
-        width: 100%;
-        max-height: 100%;
-        padding: 45px 25px 30px;
-        background-color: $white;
-        overflow: scroll;
-        @media screen and (min-width: 414px) {
-            max-width: 370px;
-            padding: 45px 50px 30px;
-        }
-    }
-    .message-close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 15px;
-        font-size: $h5;
-        cursor: pointer;
-        z-index: 1;
-        @include transition(color 0.3s);
-        &:hover {
-            color: $primary;
-        }
-    }
+	display: none;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	z-index: 6;
+	.message-wrap {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.message-container {
+		position: relative;
+		width: 100%;
+		max-height: 100%;
+		padding: 45px 25px 30px;
+		background-color: $white;
+		overflow: scroll;
+		@media screen and (min-width: 414px) {
+			max-width: 370px;
+			padding: 45px 50px 30px;
+		}
+	}
+	.message-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 15px;
+		font-size: $h5;
+		cursor: pointer;
+		z-index: 1;
+		@include transition(color 0.3s);
+		&:hover {
+			color: $primary;
+		}
+	}
 }
 
 .black {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $black;
-    @include opacity(0.4);
-    z-index: 5;
-    &.opened {
-        right: 0;
-        bottom: 0;
-    }
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $black;
+	@include opacity(0.4);
+	z-index: 5;
+	&.opened {
+		right: 0;
+		bottom: 0;
+	}
 }
