@@ -183,7 +183,7 @@ th {
   padding: 0;
 }
 
-.index-page html {
+html.index-page {
   height: 100%;
   min-height: 100%;
 }
