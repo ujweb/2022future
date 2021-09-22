@@ -3,6 +3,12 @@ function init() {
 	$('.black, body').addClass('opened');
 }
 // init();
+
+$('.issue button').on('click', function() {
+	var label = $(this).attr('data-issue');
+	$('.message-issue-' + label).fadeIn();
+	$('.black, body').addClass('opened');
+})
 $('.message, .message-close').on('click', function() {
 	$('.message').fadeOut();
 	$('.black, body').removeClass('opened');
@@ -16,6 +22,12 @@ $('.hamburger').on('click', function(){
 	$(this).toggleClass('active');
 	$(this).siblings('nav').slideToggle();
 });
+
+$('form button').on('click', function(e){
+	let val = $(this).siblings().children().children('input:checked').val();
+	e.preventDefault();
+	console.log(val)
+})
 
 $(function () {
 	var width = $(window).width(),

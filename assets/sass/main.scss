@@ -122,6 +122,43 @@ main {
             + .issue {
                 border-top: 1px solid $gray-200;
             }
+            svg {
+                text {
+                    @include transition(fill 0.3s);
+                    &.order {
+                        font-weight: bold;
+                    }
+                }
+                &.issue-1,
+                &.issue-3 {
+                    g.arc {
+                        &:hover {
+                            text {
+                                fill: $primary-variant;
+                            }
+                        }
+                        text {
+                            &.order {
+                                fill: $primary-variant;
+                            }
+                        }
+                    }
+                }
+                &.issue-2 {
+                    g.arc {
+                        &:hover {
+                            text {
+                                fill: $secondary-variant;
+                            }
+                        }
+                        text {
+                            &.order {
+                                fill: $yellow-800;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
