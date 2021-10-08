@@ -41,33 +41,35 @@ main {
 			}
 		}
 		&.opening {
+			position: relative;
+			width: 100%;
 			height: 100%;
 			min-height: 100%;
 			background-color: $yellow-100;
 			@include background-image(linear-gradient(top, $yellow-100 0%, $yellow-100 50%, $blue-variant 50%, $blue-variant 100%));
 			overflow: hidden;
+			.container {
+				display: grid;
+				align-content: center;
+				align-items: center;
+				height: 100%;
+				min-height: 100%;
+			}
+			video {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				object-fit: cover;
+			}
 			img {
 				position: relative;
-				top: 50%;
-				left: 50%;
-				@include translate(-50%, -50%);
-				@media screen and (max-width: 767px) {
-					height: 72%;
-					@media (min-aspect-ratio: 375/667) {
-						height: 85%;
-					}
-				}
-				@media screen and (min-width: 768px) and (max-width: 1023px) {
-					height: 90%;
-				}
+				width: calc(100% - 40px);
+				max-width: 400px;
+				z-index: 1;
 				@media screen and (min-width: 1024px) {
-					width: 150%;
-				}
-				@media screen and (min-width: 1440px) {
-					width: 125%;
-				}
-				@media screen and (min-width: 1920px) {
-					width: 100%;
+					width: 35%;
 				}
 			}
 		}
@@ -85,7 +87,58 @@ main {
 					}
 			}
 		}
+		&.program-issue {
+			background: linear-gradient(180deg, #F5D121 0%, #084A95 100%);                
+		}
+		#issue {
+			.col-lg-4 {
+				@media screen and (max-width: 767px) {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				@media screen and (min-width: 450px) {
+					max-width: 380px;
+				}
+				p {
+					display: grid;
+					align-content: center;
+					height: 1.5em * 4;
+					@media screen and (min-width: 1120px) {
+						height: 1.5em * 3;
+					}
+				}
+			}
+			.bg-white {
+				@include border-radius(30px);
+			}
+			.cloud {
+				width: 100%;
+				height: 160px;
+				@media screen and (min-width: 1024px) {
+					width: 260px;
+					height: 160px;
+				}
+				@media screen and (min-width: 1200px) {
+					width: 300px;
+					height: 140px;
+				}
+				svg {
+					text {
+						font-weight: bold;
+					}
+				}
+			}
+			.rank {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
 		&#subscribe {
+			.row {
+				@media screen and (max-width: 767px) {
+					flex-direction: column-reverse;
+				}
+			}
 			.col-text {
 				ul {
 					@include list(0, 0, none);
@@ -106,6 +159,12 @@ main {
 					}
 				}
 			}
+			.col-img {
+				img {
+					max-width: 400px;
+					max-height: 300px;
+				}
+			}
 			.price {
 				> * {
 					vertical-align: middle;
@@ -116,59 +175,6 @@ main {
 		&#faq {
 			.faq-title {
 				@extend %typo-weight;
-			}
-		}
-		&.issue {
-			+ .issue {
-				border-top: 1px solid $gray-200;
-			}
-			.chart {
-				overflow-x: scroll;
-				@media screen and (min-width: 360px) and (max-width: 767px) {
-					margin-left: -($gutter-width + 20) / 2;
-					margin-right: -($gutter-width + 20) / 2;
-				}
-				@media screen and (max-width: 359px) {
-					margin-left: -($gutter-width / 2);
-					margin-right: -($gutter-width / 2);
-				}			
-			}
-			svg {
-				text {
-					@include transition(fill 0.3s);
-					&.order {
-						font-weight: bold;
-					}
-				}
-				&.issue-1,
-				&.issue-3 {
-					g.arc {
-						&:hover {
-							text {
-								fill: $primary-variant;
-							}
-						}
-						text {
-							&.order {
-								fill: $primary-variant;
-							}
-						}
-					}
-				}
-				&.issue-2 {
-					g.arc {
-						&:hover {
-							text {
-								fill: $secondary-variant;
-							}
-						}
-						text {
-							&.order {
-								fill: $yellow-800;
-							}
-						}
-					}
-				}
 			}
 		}
 	}

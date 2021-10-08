@@ -24,9 +24,7 @@ $('.hamburger').on('click', function(){
 });
 
 $('form button').on('click', function(e){
-	let val = $(this).siblings().children().children('input:checked').val();
 	e.preventDefault();
-	console.log(val)
 })
 
 $(function () {
