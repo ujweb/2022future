@@ -4,7 +4,7 @@ function init() {
 }
 // init();
 
-$('.issue button').on('click', function() {
+$('#issue button').on('click', function() {
 	var label = $(this).attr('data-issue');
 	$('.message-issue-' + label).fadeIn();
 	$('.black, body').addClass('opened');
