@@ -23,6 +23,12 @@ $('.hamburger').on('click', function(){
 	$(this).siblings('nav').slideToggle();
 });
 
+$('nav ul li a').on('click', function(){
+	$('body').removeClass('opened');
+	$('.hamburger').removeClass('active');
+	$('nav').slideUp();
+});
+
 $('form button').on('click', function(e){
 	e.preventDefault();
 })
