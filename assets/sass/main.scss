@@ -44,7 +44,6 @@ main {
 			position: relative;
 			width: 100%;
 			background-color: $yellow-100;
-			@include background-image(linear-gradient(top, $yellow-100 0%, $yellow-100 50%, $blue-variant 50%, $blue-variant 100%));
 			overflow: hidden;
 			.container {
 				display: grid;
@@ -215,9 +214,14 @@ main {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	color: $white;
-	background-color: $yellow-800;
 	z-index: 2;
+	a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		color: $white;
+		background-color: $yellow-800;
+		&:hover {
+			background-color: $yellow-700;
+		}
+	}
 }
