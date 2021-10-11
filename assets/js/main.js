@@ -28,9 +28,9 @@ $('form button').on('click', function(e){
 })
 
 $(function () {
-	var width = $(window).width(),
-		height = $(window).height(),
-		headerHeight = $('header').outerHeight();
+	let width = $(window).width();
+	let height = $(window).height();
+	let headerHeight = $('header').outerHeight();
 
 	$('a.smooth-scroll[href*="#"]:not([href="#"])').on("click", function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -44,6 +44,13 @@ $(function () {
 			}
 		}
 	});
+
+	function opHeightResize(height) {
+		$('main, .opening, .opening .container').css({
+			'min-height': height
+		})
+	}
+	opHeightResize(height);
 
 	$('.slider-columns').slick({
 		infinite: true,
@@ -74,7 +81,10 @@ $(function () {
 		]
 	});
 
-	$(window).on('resize', function () {});
+	$(window).on('resize', _.throttle(function() {
+		let height = $(window).height();
+		opHeightResize(height);
+	}, 300));
 	$(window).on('scroll', function () {
 		var scroll = $(this).scrollTop(),
 			openingHeight = $(".opening").outerHeight();

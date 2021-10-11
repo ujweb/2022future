@@ -45,6 +45,15 @@
 			background-image: linear-gradient(180deg, $yellow-lighten 0%, $secondary 50%, $secondary 50%, $secondary-variant 100%);
 		}
 	}
+	&[disabled] {
+		color: $gray-300;
+		background-image: none;
+		background-color: $gray-100;
+		cursor: not-allowed !important;
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .btn-text {

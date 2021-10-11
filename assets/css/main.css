@@ -4132,6 +4132,15 @@ h6, .h6 {
 .btn-contained.btn-yellow::before {
   background-image: linear-gradient(180deg, #ffe600 0%, #f5d121 50%, #f5d121 50%, #f5a200 100%);
 }
+.btn-contained[disabled] {
+  color: #969696;
+  background-image: none;
+  background-color: #F0F0F0;
+  cursor: not-allowed !important;
+}
+.btn-contained[disabled]::before {
+  display: none;
+}
 
 .btn-text.btn-black {
   color: #000;
@@ -4602,8 +4611,6 @@ main section:not(.opening, .jumbotron) .container {
 main section.opening {
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 100%;
   background-color: #FFDA00;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZGEwMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZkYTAwIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwODRhOTUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODRhOTUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -4617,8 +4624,8 @@ main section.opening .container {
   display: grid;
   align-content: center;
   align-items: center;
-  height: 100%;
-  min-height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 main section.opening video {
   position: absolute;
@@ -4628,16 +4635,28 @@ main section.opening video {
   right: 0;
   object-fit: cover;
 }
-main section.opening img {
-  position: relative;
-  width: calc(100% - 40px);
+main section.opening .img-block {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   max-width: 400px;
-  z-index: 1;
 }
 @media screen and (min-width: 1024px) {
-  main section.opening img {
+  main section.opening .img-block {
     width: 35%;
   }
+}
+main section.opening img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+main section.opening p {
+  position: relative;
+  font-size: 1.125rem;
+  font-weight: 500;
+  z-index: 1;
 }
 main section.jumbotron {
   background-image: url("../images/jumbotron@2x.png");
@@ -4672,11 +4691,15 @@ main section.program-issue {
 main section #issue .col-lg-4 p {
   display: grid;
   align-content: center;
-  height: 6em;
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1024px) {
   main section #issue .col-lg-4 p {
-    height: 4.5em;
+    height: 7.5em;
+  }
+}
+@media screen and (min-width: 1040px) {
+  main section #issue .col-lg-4 p {
+    height: 6em;
   }
 }
 main section #issue .bg-white {
