@@ -92,10 +92,11 @@ main {
 			.container {
 				padding-top: 160px;
 				padding-bottom: 90px;
+				text-shadow: 1px 1px 1px rgba($black, 0.125);
 				@media screen and (min-width: 1024px) {
 					padding-top: 180px;
 					padding-bottom: 100px;
-					}
+				}
 			}
 		}
 		&.program-issue {
@@ -225,3 +226,5 @@ main {
 		}
 	}
 }
+
+@import "_card";

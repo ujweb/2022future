@@ -4149,6 +4149,25 @@ h6, .h6 {
   color: #084A95;
 }
 
+.btn--white {
+  display: inline-block;
+  min-width: 170px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  outline: 0;
+}
+.btn--white:hover {
+  color: #F5D121;
+  border-color: #F5D121;
+}
+
 .embed {
   position: relative;
   overflow: hidden;
@@ -4664,6 +4683,7 @@ main section.jumbotron {
 main section.jumbotron .container {
   padding-top: 160px;
   padding-bottom: 90px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.125);
 }
 @media screen and (min-width: 1024px) {
   main section.jumbotron .container {
@@ -4796,6 +4816,93 @@ main section#subscribe .price > * {
 }
 .fix-bar a:hover {
   background-color: #E9632D;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+@media screen and (min-width: 560px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+}
+
+.card-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+.card-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.card-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-item .card-text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+.card-item .card-text h2 {
+  line-height: 1;
+}
+.card-item .card-text h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #F5D121;
+}
+.card-item .card-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.card-item .card-text ul li {
+  display: inline-block;
+  vertical-align: middle;
+  color: #F5D121;
+  font-size: 1rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.card-item .card-text ul li + li {
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

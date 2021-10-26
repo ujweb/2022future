@@ -64,3 +64,20 @@
 		}
 	}
 }
+
+.btn--white {
+	display: inline-block;
+    min-width: 170px;
+    padding: 10px 20px;
+	color: $white;
+	font-size: $fs16;
+	text-align: center;
+    background-color: rgba($black,0.1);
+    border: 1px solid $white;
+	@include border-radius(60px);
+    outline: 0;
+	&:hover {
+		color: $yellow;;
+		border-color: $yellow;
+	}
+}
