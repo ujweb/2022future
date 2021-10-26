@@ -2,8 +2,8 @@ var keys = [
     {
         "keyEng": "From Covid to ?",
         "keyZH": "疫後大未來",
-        "img": "",
-        "hashtag": ["", "", ""],
+        "img": "covid.jpg",
+        "hashtag": ["關鍵字1", "關鍵字2", "關鍵字3"],
         "apple": "",
         "google": "",
         "article": ""
@@ -73,7 +73,7 @@ var keys = [
     },
     {
         "keyEng": "Energy Storage",
-        "keyZH": "電動與能",
+        "keyZH": "電動與能源",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
