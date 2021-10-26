@@ -116,7 +116,7 @@ for (var k = 0; k < keys.length; k++) {
         imgCard += keys[k]["img"];
         imgCard += '" alt="';
         imgCard += keys[k]["keyZH"];
-        imgCard += '"><div class="card-text"><div class="h5 my-0">' + keys[k]["keyEng"] + '</div><h2 class="my-0">';
+        imgCard += '"><div class="card-text"><div class="h5 mt-0 mb-5">' + keys[k]["keyEng"] + '</div><h2 class="my-0">';
         imgCard += keys[k]["keyZH"];
         imgCard += '</h2><ul>';
         for (var m = 0; m < keys[k]["hashtag"].length; m++) {
@@ -134,7 +134,7 @@ for (var k = 0; k < keys.length; k++) {
         }
         imgCard += '</div></div>';
     } else {
-        imgCard += '<div class="card-item"><div class="card-text"><div class="h5 my-0">' + keys[k]["keyEng"] + '</div><h2 class="my-0">' + keys[k]["keyZH"] + '</h2>';
+        imgCard += '<div class="card-item"><div class="card-text"><div class="h5 mt-0 mb-5">' + keys[k]["keyEng"] + '</div><h2 class="my-0">' + keys[k]["keyZH"] + '</h2>';
         imgCard += '<div class="h5 mt-10 mb-0">每週三下午更新<br/>敬請期待</div></div></div>';
     }
 }
