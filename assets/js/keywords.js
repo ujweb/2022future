@@ -1,14 +1,7 @@
 var keys = [
     {
-        "keys": "逆境領導",
-        "img": "adversity.jpg",
-        "hashtag": ["領袖特質", "打造韌性", "浪琴表"],
-        "apple": "https://reurl.cc/GdbRzd",
-        "google": "https://reurl.cc/Q76k80",
-        "article": ""
-    },
-    {
-        "keys": "數位創新",
+        "keyEng": "From Covid to ?",
+        "keyZH": "疫後大未來",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -16,7 +9,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "省電模式",
+        "keyEng": "Blended World",
+        "keyZH": "混成世界",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -24,7 +18,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "重啟",
+        "keyEng": "DeFi Economy",
+        "keyZH": "去中心化經濟",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -32,7 +27,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "未來人才",
+        "keyEng": "Future Talents",
+        "keyZH": "創新人才",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -40,7 +36,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "智慧聚落",
+        "keyEng": "Net Zero",
+        "keyZH": "淨零碳排",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -48,7 +45,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "疫後K經濟",
+        "keyEng": ":15 City",
+        "keyZH": "15 分鐘城市",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -56,7 +54,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "低利對策",
+        "keyEng": "Metaverse",
+        "keyZH": "元宇宙",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -64,7 +63,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "智慧急診",
+        "keyEng": "Cyber Security",
+        "keyZH": "網路安全",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -72,7 +72,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "永續佈局",
+        "keyEng": "Energy Storage",
+        "keyZH": "電動與能",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -80,7 +81,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "美中台關係",
+        "keyEng": "Retron & Crispr",
+        "keyZH": "基因編輯",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -88,7 +90,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "未來建築",
+        "keyEng": "Just in Case",
+        "keyZH": "管理",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -96,7 +99,8 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "2021關鍵字",
+        "keyEng": "Designing Life",
+        "keyZH": "重新設計生活",
         "img": "",
         "hashtag": ["", "", ""],
         "apple": "",
@@ -111,9 +115,9 @@ for (var k = 0; k < keys.length; k++) {
         imgCard += '<div class="card-item"><img src="assets/images/keyword/';
         imgCard += keys[k]["img"];
         imgCard += '" alt="';
-        imgCard += keys[k]["keys"];
-        imgCard += '"><div class="card-text"><h2 class="my-0">';
-        imgCard += keys[k]["keys"];
+        imgCard += keys[k]["keyZH"];
+        imgCard += '"><div class="card-text"><div class="h5 my-0">' + keys[k]["keyEng"] + '</div><h2 class="my-0">';
+        imgCard += keys[k]["keyZH"];
         imgCard += '</h2><ul>';
         for (var m = 0; m < keys[k]["hashtag"].length; m++) {
             imgCard += '<li>#' + keys[k]["hashtag"][m] + '</li>';
@@ -130,8 +134,8 @@ for (var k = 0; k < keys.length; k++) {
         }
         imgCard += '</div></div>';
     } else {
-        imgCard += '<div class="card-item"><div class="card-text"><h2 class="my-0">' + keys[k]["keys"] + '</h2>';
-        imgCard += '<div class="h5 mt-10 mb-0">每週四更新<br/>敬請期待</div></div></div>';
+        imgCard += '<div class="card-item"><div class="card-text"><div class="h5 my-0">' + keys[k]["keyEng"] + '</div><h2 class="my-0">' + keys[k]["keyZH"] + '</h2>';
+        imgCard += '<div class="h5 mt-10 mb-0">每週三下午更新<br/>敬請期待</div></div></div>';
     }
 }
 $('.card-list').html(imgCard);
