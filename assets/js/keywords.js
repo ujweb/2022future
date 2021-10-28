@@ -3,9 +3,8 @@ var keys = [
         "keyEng": "From Covid to ?",
         "keyZH": "疫後大未來",
         "img": "covid.jpg",
-        "hashtag": ["關鍵字1", "關鍵字2", "關鍵字3"],
-        "apple": "",
-        "google": "",
+        "hashtag": ["2022", "趨勢預測"],
+        "podcast": "https://open.firstory.me/story/ckv9c00qi52vd0981wxsdwdsa/platforms",
         "article": ""
     },
     {
@@ -13,8 +12,7 @@ var keys = [
         "keyZH": "混成世界",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -22,8 +20,7 @@ var keys = [
         "keyZH": "去中心化經濟",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -31,8 +28,7 @@ var keys = [
         "keyZH": "創新人才",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -40,8 +36,7 @@ var keys = [
         "keyZH": "淨零碳排",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -49,8 +44,7 @@ var keys = [
         "keyZH": "15 分鐘城市",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -58,8 +52,7 @@ var keys = [
         "keyZH": "元宇宙",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -67,8 +60,7 @@ var keys = [
         "keyZH": "網路安全",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -76,8 +68,7 @@ var keys = [
         "keyZH": "電動與能源",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -85,8 +76,7 @@ var keys = [
         "keyZH": "基因編輯",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -94,8 +84,7 @@ var keys = [
         "keyZH": "管理",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     },
     {
@@ -103,8 +92,7 @@ var keys = [
         "keyZH": "重新設計生活",
         "img": "",
         "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
+        "podcast": "",
         "article": ""
     }
 ]
@@ -123,11 +111,8 @@ for (var k = 0; k < keys.length; k++) {
             imgCard += '<li>#' + keys[k]["hashtag"][m] + '</li>';
         }
         imgCard += '</ul>';
-        if ( keys[k]["apple"] != '' ) {
-            imgCard += '<a href="' + keys[k]["apple"] + '" target="_blank" class="btn btn--white mt-10">Apple Podcast</a>';
-        }
-        if ( keys[k]["google"] != '' ) {
-            imgCard += '<a href="' + keys[k]["google"] + '" target="_blank" class="btn btn--white mt-10">Google Podcast</a>';
+        if ( keys[k]["podcast"] != '' ) {
+            imgCard += '<a href="' + keys[k]["podcast"] + '" target="_blank" class="btn btn--white mt-20">Podcast</a>';
         }
         if ( keys[k]["article"] != '' ) {
             imgCard += '<a href="' + keys[k]["article"] + '" target="_blank" class="btn btn--white mt-10">相關報導</a>';
