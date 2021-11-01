@@ -1,7 +1,7 @@
 var keys = [
     {
         "keyEng": "From Covid to ?",
-        "keyZH": "疫後大未來",
+        "keyZH": "疫後趨勢",
         "img": "covid.jpg",
         "hashtag": ["2022", "趨勢預測"],
         "podcast": "https://open.firstory.me/story/ckv9c00qi52vd0981wxsdwdsa/platforms",
@@ -9,7 +9,7 @@ var keys = [
     },
     {
         "keyEng": "Blended World",
-        "keyZH": "混成世界",
+        "keyZH": "人與空間",
         "img": "",
         "hashtag": ["", "", ""],
         "podcast": "",
