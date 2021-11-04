@@ -1,6 +1,6 @@
 var keys = [
     {
-        "keyEng": "From Covid to ?",
+        "keyEng": "Post-pandemic Trend",
         "keyZH": "疫後趨勢",
         "img": "covid.jpg",
         "hashtag": ["2022", "趨勢預測"],
@@ -8,11 +8,11 @@ var keys = [
         "article": ""
     },
     {
-        "keyEng": "Blended World",
-        "keyZH": "人與空間",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "keyEng": "N-dimensional Space",
+        "keyZH": "N 度空間",
+        "img": "n-space.jpg",
+        "hashtag": ["人與空間", "空間重組"],
+        "podcast": "https://open.firstory.me/story/ckvjgod0h051i0923pk43wlia/platforms",
         "article": ""
     },
     {
