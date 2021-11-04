@@ -103,6 +103,12 @@ main {
 			background: linear-gradient(180deg, #F5D121 0%, #084A95 100%);                
 		}
 		#issue {
+			.row {
+				@media screen and (max-width: 1023px) {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
 			.col-lg-4 {
 				@media screen and (max-width: 767px) {
 					padding-left: 0;
@@ -122,8 +128,31 @@ main {
 					}
 				}
 			}
-			.bg-white {
-				@include border-radius(30px);
+			.ticket-item {
+				.ticket-top {
+					@include border-radius(30px 30px 0 0);
+				}
+				.ticket-bottom {
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					justify-content: center;
+					@include border-radius(0 0 30px 30px);
+				}
+			}
+			.speaker-group {
+				.speaker-item {
+					display: flex;
+					align-items: center;
+					+ .speaker-item {
+						margin-top: 20px;
+					}
+					img {
+						display: block;
+						width: 60px;
+						@include border-radius(50%);
+					}
+				}
 			}
 			.cloud {
 				width: 100%;

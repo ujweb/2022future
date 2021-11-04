@@ -58,6 +58,19 @@ $(function () {
 	}
 	opHeightResize(height);
 
+	function ticketHeightResize(width) {
+		if ( width >= 1024 ) {
+			$('.ticket-item > .ticket-bottom').css({
+				'min-height': $('.ticket-item').eq(0).children('.ticket-bottom').outerHeight()
+			})
+		} else {
+			$('.ticket-item > .ticket-bottom').css({
+				'min-height': 'auto'
+			})
+		}
+	}
+	ticketHeightResize(width);
+
 	$('.slider-columns').slick({
 		infinite: true,
 		slidesToShow: 4,
@@ -88,9 +101,15 @@ $(function () {
 	});
 
 	$(window).on('resize', _.throttle(function() {
+		let width = $(window).width();
 		let height = $(window).height();
 		opHeightResize(height);
+		ticketHeightResize(width);
 	}, 300));
+	$(window).on('load', function () {
+		let width = $(window).width();
+		ticketHeightResize(width);
+	});
 	$(window).on('scroll', function () {
 		var scroll = $(this).scrollTop(),
 			openingHeight = $(".opening").outerHeight();

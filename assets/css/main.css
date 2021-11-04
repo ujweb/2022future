@@ -4694,6 +4694,12 @@ main section.jumbotron .container {
 main section.program-issue {
   background: linear-gradient(180deg, #f5d121 0%, #084a95 100%);
 }
+@media screen and (max-width: 1023px) {
+  main section #issue .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 767px) {
   main section #issue .col-lg-4 {
     padding-left: 0;
@@ -4719,10 +4725,33 @@ main section #issue .col-lg-4 p {
     height: 6em;
   }
 }
-main section #issue .bg-white {
-  -moz-border-radius: 30px;
+main section #issue .ticket-item .ticket-top {
+  -moz-border-radius: 30px 30px 0 0;
   -webkit-border-radius: 30px;
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
+}
+main section #issue .ticket-item .ticket-bottom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  -moz-border-radius: 0 0 30px 30px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 30px 30px;
+}
+main section #issue .speaker-group .speaker-item {
+  display: flex;
+  align-items: center;
+}
+main section #issue .speaker-group .speaker-item + .speaker-item {
+  margin-top: 20px;
+}
+main section #issue .speaker-group .speaker-item img {
+  display: block;
+  width: 60px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 main section #issue .cloud {
   width: 100%;
