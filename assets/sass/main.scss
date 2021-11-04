@@ -132,6 +132,23 @@ main {
 				.ticket-top {
 					@include border-radius(30px 30px 0 0);
 				}
+				.ticket-line {
+					position: relative;
+					&::before, &::after {
+						@include beforeafter('', block);
+						position: absolute;
+						left: 0;
+						right: 0;
+						height: 2px;
+						background-color: $white;
+					}
+					&::before{
+						top: -1px;
+					}
+					&::after {
+						bottom: -1px;
+					}
+				}
 				.ticket-bottom {
 					display: flex;
 					flex-direction: column;
