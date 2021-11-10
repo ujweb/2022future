@@ -4,7 +4,7 @@ var keys = [
         "keyZH": "疫後趨勢",
         "img": "covid.jpg",
         "hashtag": ["2022", "趨勢預測"],
-        "podcast": "https://open.firstory.me/story/ckv9c00qi52vd0981wxsdwdsa/platforms",
+        "podcast": "https://open.firstory.me/story/ckv9c00qi52vd0981wxsdwdsa",
         "article": ""
     },
     {
@@ -12,7 +12,15 @@ var keys = [
         "keyZH": "N 度空間",
         "img": "n-space.jpg",
         "hashtag": ["人與空間", "空間重組"],
-        "podcast": "https://open.firstory.me/story/ckvjgod0h051i0923pk43wlia/platforms",
+        "podcast": "https://open.firstory.me/story/ckvjgod0h051i0923pk43wlia",
+        "article": ""
+    },
+    {
+        "keyEng": "15-Minute City",
+        "keyZH": "15 分鐘城市",
+        "img": "futurecity.jpg",
+        "hashtag": ["都市規劃", "未來城市"],
+        "podcast": "https://open.firstory.me/story/ckvtcb6f2beik0848m1igbe18",
         "article": ""
     },
     {
@@ -34,14 +42,6 @@ var keys = [
     {
         "keyEng": "Net Zero",
         "keyZH": "淨零碳排",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": ":15 City",
-        "keyZH": "15 分鐘城市",
         "img": "",
         "hashtag": ["", "", ""],
         "podcast": "",
