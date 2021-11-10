@@ -25,6 +25,11 @@
 			top: 0%;
 		}
 	}
+	&.btn-sm {
+		min-width: 120px;
+		padding: 12px;
+		font-size: $fs16;
+	}
 	&.btn-md {
 		min-width: 140px;
 		padding: 14px;
@@ -59,6 +64,10 @@
 .btn-text {
 	&.btn-black {
 		color: $black;
+		&.btn-underline {
+			text-decoration: underline;
+			text-underline-position: under;
+		}
 		&:hover {
 			color: $primary-variant;
 		}
