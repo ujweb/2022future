@@ -26,9 +26,9 @@ var keys = [
     {
         "keyEng": "Metaverse",
         "keyZH": "元宇宙",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "img": "metaverse.jpg",
+        "hashtag": ["去中心化", "MR", "XR"],
+        "podcast": "https://open.firstory.me/story/ckw3c1p6itgf80884qfr50ju7",
         "article": ""
     },
     {
