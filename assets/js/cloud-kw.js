@@ -272,12 +272,5 @@ $('.message-button').on('click', function(e) {
     $('.message-kw .message-container').html(cloudTemp);
 	$('.message-kw').fadeIn();
 	$('.black, body').addClass('opened');
-});
-
-$('.message, .message-close').on('click', function() {
-    $('.message').fadeOut();
-    $('.black, body').removeClass('opened');
-});
-$('.message-container').on('click', function(e) {
-    e.stopPropagation();
+    close();
 });

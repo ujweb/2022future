@@ -20,6 +20,18 @@ $('form button').on('click', function(e){
 	e.preventDefault();
 })
 
+function close() {
+    $('.message, .message-close').on('click', function() {
+        $('.message').fadeOut();
+        $('.black, body').removeClass('opened');
+    });
+    $('.message-container').on('click', function(e) {
+        e.stopPropagation();
+    });
+}
+
+close();
+
 $(function () {
 	let width = $(window).width();
 	let height = $(window).height();
