@@ -4758,12 +4758,20 @@ main section #issue .ticket-item .ticket-line::after {
   bottom: -1px;
 }
 main section #issue .ticket-item .ticket-bottom {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
-  -moz-border-radius: 0 0 30px 30px;
-  -webkit-border-radius: 0;
-  border-radius: 0 0 30px 30px;
+  padding-bottom: 130px;
+  -moz-border-radius: 30px 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px 30px;
+}
+main section #issue .ticket-item .ticket-bottom .btn-blue {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 main section #issue .speaker-group .speaker-item {
   display: flex;

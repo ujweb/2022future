@@ -150,11 +150,19 @@ main {
 					}
 				}
 				.ticket-bottom {
+					position: relative;
 					display: flex;
 					flex-direction: column;
 					align-content: center;
 					// justify-content: center;
-					@include border-radius(0 0 30px 30px);
+					padding-bottom: 130px;
+					@include border-radius(30px 30px);
+					.btn-blue {
+						position: absolute;
+						bottom: 40px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
 				}
 			}
 			.speaker-group {
