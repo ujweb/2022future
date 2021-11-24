@@ -102,6 +102,89 @@ main {
 		&.program-issue {
 			background: linear-gradient(180deg, #F5D121 0%, #084A95 100%);                
 		}
+		#program {
+			.cloud {
+				margin-top: 40px;
+				margin-bottom: 140px;
+				svg {
+					[class*='cls-'] {
+						fill:#fff;
+					}
+					.cls-1 {
+						fill-opacity:0.34;
+					}
+					.cls-2 {
+						fill-opacity:0;
+						cursor: pointer;
+					}
+					.cls-3 {
+						fill-opacity:0.4;
+					}
+					.cls-4 {
+						fill-opacity:0.46;
+					}
+					.cls-5 {
+						fill-opacity:0.52;
+					}
+					.cls-6 {
+						fill-opacity:0.58;
+					}
+					.cls-7 {
+						fill-opacity:0.64;
+					}
+					.cls-8 {
+						fill-opacity:0.7;
+					}
+					.cls-9 {
+						fill-opacity:0.76;
+					}
+					.cls-10 {
+						fill-opacity:0.82;
+					}
+					.cls-11 {
+						fill-opacity:0.88;
+					}
+					.cls-12 {
+						fill-opacity:0.94;
+					}
+					.cls-underline {
+						opacity: 0;
+						transition: opacity 0.3s;
+					}
+					g:hover {
+						.cls-underline {
+							opacity: 1;
+						}
+					}
+				}
+				&.cloud-square {
+					@media screen and (min-width: 600px) {
+						display: none;
+					}
+					@media screen and (max-width: 599px) {
+						display: block;
+					}
+					svg {
+						display: block;
+						width: 100%;
+						max-width: 342px;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				&.cloud-landscape {
+					@media screen and (min-width: 600px) {
+						display: block;
+					}
+					@media screen and (max-width: 599px) {
+						display: none;
+					}
+					svg {
+						width: 540px;
+					}
+				}
+			}
+		}
 		#issue {
 			.row {
 				@media screen and (max-width: 1023px) {
@@ -150,11 +233,19 @@ main {
 					}
 				}
 				.ticket-bottom {
+					position: relative;
 					display: flex;
 					flex-direction: column;
 					align-content: center;
 					// justify-content: center;
-					@include border-radius(0 0 30px 30px);
+					padding-bottom: 130px;
+					@include border-radius(30px 30px);
+					.btn-blue {
+						position: absolute;
+						bottom: 40px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
 				}
 			}
 			.speaker-group {
@@ -168,23 +259,6 @@ main {
 						display: block;
 						width: 60px;
 						@include border-radius(50%);
-					}
-				}
-			}
-			.cloud {
-				width: 100%;
-				height: 160px;
-				@media screen and (min-width: 1024px) {
-					width: 260px;
-					height: 160px;
-				}
-				@media screen and (min-width: 1200px) {
-					width: 300px;
-					height: 140px;
-				}
-				svg {
-					text {
-						font-weight: bold;
 					}
 				}
 			}
@@ -274,3 +348,18 @@ main {
 }
 
 @import "_card";
+
+.kw-item {
+	@media screen and (max-width: 767px) {
+		align-items: center;
+		img {
+			width: 113px;
+			height: auto;
+		}
+		.h5 {
+			width: calc(100% - 113px);
+			padding-left: 10px;
+			font-size: 1rem;
+		}
+	}
+}

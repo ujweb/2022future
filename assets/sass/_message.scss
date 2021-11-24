@@ -18,27 +18,67 @@
 	}
 	.message-container {
 		position: relative;
-		width: 100%;
 		max-height: 100%;
-		padding: 45px 25px 30px;
 		background-color: $white;
 		overflow: scroll;
-		@media screen and (min-width: 414px) {
-			max-width: 370px;
-			padding: 45px 50px 30px;
-		}
 	}
 	.message-close {
 		position: absolute;
-		top: 0;
-		right: 0;
 		padding: 15px;
 		font-size: $h5;
 		cursor: pointer;
 		z-index: 1;
 		@include transition(color 0.3s);
-		&:hover {
-			color: $primary;
+	}
+	&.message-kw {
+		.message-container {
+			width: 100%;
+			padding: 80px 20px 50px;
+			@media screen and (min-width: 1200px) {
+				max-width: 1110px;
+				padding: 70px 40px 60px;
+			}
+			.message-close {
+				top: 15px;
+				right: 5px;
+				@media screen and (min-width: 1200px) {
+					top: 15px;
+					right: 45px;
+				}
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+	&.message-banner {
+		.message-container {
+			a {
+				display: block;
+				img {
+					display: block;
+					&.desktop {
+						width: 800px;
+						@media screen and (max-width: 899px) {
+							display: none;
+						}
+					}
+					&.mobile {
+						width: 320px;
+						@media screen and (min-width: 900px) {
+							display: none;
+						}
+					}
+				}
+			}
+			.message-close {
+				top: 0px;
+				right: 0px;
+				color: $white;
+				&:hover {
+					color: $primary;
+				}
+			}
 		}
 	}
 }
