@@ -160,7 +160,7 @@ const cloudKy = {
         ]
     },
     '醫療趨勢': {
-        'slogan': '企業永續經營NO.1',
+        'slogan': '',
         'array': [
             {
                 title: '',
