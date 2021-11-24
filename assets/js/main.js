@@ -4,19 +4,6 @@ function init() {
 }
 // init();
 
-$('#issue button').on('click', function() {
-	var label = $(this).attr('data-issue');
-	$('.message-issue-' + label).fadeIn();
-	$('.black, body').addClass('opened');
-})
-$('.message, .message-close').on('click', function() {
-	$('.message').fadeOut();
-	$('.black, body').removeClass('opened');
-});
-$('.message-container').on('click', function(e) {
-	e.stopPropagation();
-});
-
 $('.hamburger').on('click', function(){
 	$('body').toggleClass('opened');
 	$(this).toggleClass('active');
