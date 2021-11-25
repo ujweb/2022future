@@ -79,6 +79,26 @@ const cloudKy = {
             }
         ]
     },
+    '社會參與': {
+        'slogan': '企業永續經營NO.3',
+        'array': [
+            {
+                title: '「老師，請幫我謝謝鴻海」　從一個獎學金故事，解讀2021天下永續100強',
+                url: 'https://www.cw.com.tw/article/5118193',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/article-614863e750c70.jpg',
+            },
+            {
+                title: '投入1元創8元價值　104如何把「社會負擔」變職場資源？',
+                url: 'https://www.cw.com.tw/article/5118178',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/article-614abf72623bb.jpg',
+            },
+            {
+                title: '淨零碳排：青世代正在改變氣候困境 | 2021《 如何避免氣候災難》行動論壇',
+                url: 'https://www.cw.com.tw/video/video.action?id=1476',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/video/202104/video-608b7dfa2627d.jpg',
+            }
+        ]
+    },
     'ESG': {
         'slogan': '企業永續經營NO.2',
         'array': [
@@ -119,26 +139,6 @@ const cloudKy = {
             }
         ]
     },
-    '第三人生': {
-        'slogan': '生活型態未來趨勢NO.3',
-        'array': [
-            {
-                title: '60歲練成40歲卻差點沒命，羅明通墜馬病危的人生體悟',
-                url: 'https://www.cw.com.tw/article/5118664',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-61769eefb46b3.jpg',
-            },
-            {
-                title: '決定退休生活，跟大學選系一樣重要　第三人生如何規劃？',
-                url: 'https://www.cw.com.tw/article/5114517',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202104/article-6082953e4dff6.jpg',
-            },
-            {
-                title: '失明前long stay 30國　前台達電董事長特助，當選台灣青旅大使',
-                url: 'https://www.cw.com.tw/article/5114899',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202105/article-60a617a030efb.jpg',
-            }
-        ]
-    },
     '供應鏈': {
         'slogan': '產業趨勢新未來 NO.3',
         'array': [
@@ -160,25 +160,25 @@ const cloudKy = {
         ]
     },
     '醫療趨勢': {
-        'slogan': '',
+        'slogan': '生活型態未來趨勢NO.3',
         'array': [
             {
-                title: '',
-                url: '',
-                img: '',
+                title: '年輕人不想當下個羅一鈞？全台感染科招募不到新醫師，為什麼？',
+                url: 'https://www.cw.com.tw/article/5119047',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-619f495154d82.JPG',
             },
             {
-                title: '',
-                url: '',
-                img: '',
+                title: '疫情有解？全球第一款新冠口服藥將上市　台灣買到了嗎？',
+                url: 'https://www.cw.com.tw/article/5118866',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-618bb9ad495f6.jpg',
             },
             {
-                title: '',
-                url: '',
-                img: '',
+                title: '營養學家：50歲後，你需要攝取更多的4種營養素',
+                url: 'https://www.cw.com.tw/article/5118691',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-6179296c1c1ea.jpg',
             }
         ]
-    }, // 人勒
+    },
     '通膨': {
         'slogan': '',
         'array': [
