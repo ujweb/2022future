@@ -33,10 +33,10 @@ var keys = [
     },
     {
         "keyEng": "Investment trend",
-        "keyZH": "投資趨勢",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "keyZH": "大趨勢投資",
+        "img": "electric-car.jpg",
+        "hashtag": ["未來通訊", "智慧醫療"],
+        "podcast": "https://open.firstory.me/story/ckwdcas9269yb09206ewgiat8",
         "article": ""
     },
     {
