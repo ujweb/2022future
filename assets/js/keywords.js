@@ -32,7 +32,7 @@ var keys = [
         "article": ""
     },
     {
-        "keyEng": "Investment trend",
+        "keyEng": "Thematic Investing",
         "keyZH": "趨勢投資",
         "img": "electric-car.jpg",
         "hashtag": ["未來通訊", "智慧醫療"],
