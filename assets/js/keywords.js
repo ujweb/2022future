@@ -42,9 +42,9 @@ var keys = [
     {
         "keyEng": "Blended World",
         "keyZH": "混成世界",
-        "img": "",
-        "hashtag": ["混成模式", "市場風險"],
-        "podcast": "",
+        "img": "wfh.jpg",
+        "hashtag": ["混成創新", "市場風險"],
+        "podcast": "https://open.firstory.me/story/ckwnozqfs0i0j0952elhhg1bj",
         "article": ""
     },
     {
