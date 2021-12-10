@@ -48,6 +48,14 @@ var keys = [
         "article": ""
     },
     {
+        "keyEng": "Zero-waste Consumption",
+        "keyZH": "零廢消費",
+        "img": "zero-waste.jpg",
+        "hashtag": ["循環經濟", "零廢棄"],
+        "podcast": "https://open.firstory.me/story/ckwxp124w2s5208715p21xaqc",
+        "article": ""
+    },
+    {
         "keyEng": "DeFi Economy",
         "keyZH": "去中心化經濟",
         "img": "",
@@ -58,14 +66,6 @@ var keys = [
     {
         "keyEng": "Future Talents",
         "keyZH": "創新人才",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": "Net Zero",
-        "keyZH": "淨零碳排",
         "img": "",
         "hashtag": ["", "", ""],
         "podcast": "",
