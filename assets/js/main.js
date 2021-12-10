@@ -60,7 +60,7 @@ $(function () {
 	function ticketHeightResize(width) {
 		if ( width >= 1024 ) {
 			$('.ticket-item > .ticket-bottom').css({
-				'min-height': $('.ticket-item').eq(0).children('.ticket-bottom').outerHeight()
+				'min-height': $('.ticket-item').eq(1).children('.ticket-bottom').outerHeight()
 			})
 		} else {
 			$('.ticket-item > .ticket-bottom').css({
