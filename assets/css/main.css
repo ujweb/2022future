@@ -4240,7 +4240,7 @@ header a.logo {
   height: 23px;
   z-index: 4;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hamburger {
     display: none;
   }
@@ -4280,13 +4280,13 @@ header a.logo {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   nav {
     display: block !important;
     height: 100% !important;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   nav {
     display: none;
     position: fixed;
@@ -4311,23 +4311,28 @@ nav ul li {
   -webkit-transition: margin 0.3s;
   transition: margin 0.3s;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   nav ul li {
     display: inline-block;
     vertical-align: middle;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   nav ul li + li {
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   nav ul li + li {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  nav ul li:last-child {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1023px) {
   nav ul li:last-child {
     margin-top: 30px;
   }

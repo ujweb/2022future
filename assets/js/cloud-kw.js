@@ -23,19 +23,19 @@ const cloudKy = {
         'slogan': '生活型態未來趨勢NO.1',
         'array': [
             {
-                title: '把比特幣當法定貨幣　薩爾瓦多的大膽實驗，為何恐是悲劇？',
-                url: 'https://www.cw.com.tw/article/5118780',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6180a8fd7a507.jpg',
+                title: '運價、股市會飆多久？全球經濟能回到疫前常態？10張圖看懂2022',
+                url: 'https://www.cw.com.tw/article/5119348',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b882235f023.JPG',
             },
             {
-                title: '交易量掉九成！NFT藝術熱退燒，元宇宙接力掀下一波NFT應用浪潮',
-                url: 'https://www.cw.com.tw/article/5118931',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-619335682bded.jpg',
+                title: '這輩子沒遇過通膨？專家建議，通膨理財的4個原則',
+                url: 'https://www.cw.com.tw/article/5119182',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61a9a09945905.jpg',
             },
             {
-                title: '若去年11月投資特斯拉1000美元，你現在賺多少？',
-                url: 'https://www.cw.com.tw/article/5118827',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6184ee8ae90e5.jpg',
+                title: '投資專家：買房是很糟糕的投資方式',
+                url: 'https://www.cw.com.tw/article/5118948',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6193514a9241c.jpg',
             }
         ]
     },
@@ -63,19 +63,19 @@ const cloudKy = {
         'slogan': '產業趨勢新未來 NO.2',
         'array': [
             {
-                title: '元宇宙概念股狂漲，宏達電單月飆100%，想買先搞懂４件事',
-                url: 'https://www.cw.com.tw/article/5118790',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-618238e2b478b.jpg',
+                title: '高通執行長說溜嘴的銷售數字，預示元宇宙商機提早爆發？',
+                url: 'https://www.cw.com.tw/article/5119324',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/purchase-reauisition-61b719e5ca2ca.jpg',
+            },
+            {
+                title: '蘋果聯手台積　沒人聽過的新技術，是「元宇宙」成真關鍵？',
+                url: 'https://www.cw.com.tw/article/5119166',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61a8a0fc32fc1.jpg',
             },
             {
                 title: '元宇宙為什麼重要？誰將擁有元宇宙？元宇宙價值多少？',
                 url: 'https://www.cw.com.tw/article/5118833',
                 img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6188c9526c476.jpg',
-            },
-            {
-                title: '「元宇宙」究竟有何魅力　吸引科技巨頭爭相入局',
-                url: 'https://www.cw.com.tw/article/5118618',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-6170ebfac21e9.jpg',
             }
         ]
     },
@@ -103,19 +103,19 @@ const cloudKy = {
         'slogan': '企業永續經營NO.2',
         'array': [
             {
-                title: '一份ESG高碳排名單，為何激發鴻海全面改革？',
-                url: 'https://www.cw.com.tw/article/5118169',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/purchase-reauisition-6145f01848ecd.jpg',
+                title: '台積電大方分享ESG心法　永續模範生如何做？',
+                url: 'https://www.cw.com.tw/article/5119175',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61a98e8c7d9ad.jpg',
             },
             {
-                title: '淨零碳排、ESG對企業有多重要？為什麼台積電敢承諾，30年做到',
-                url: 'https://www.cw.com.tw/article/5118228',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/article-614bf92d6b904.jpg',
+                title: '本土碳費、淨零大浪來襲　2022台灣哪些法規將修改？',
+                url: 'https://www.cw.com.tw/article/5119319',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b8116fe75a2.JPG',
             },
             {
-                title: 'Nike、露露檸檬做永續都找它！76歲遠東新，為何在最潮ESG圈子爆紅？',
-                url: 'https://www.cw.com.tw/article/5118191',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/article-614d87c4e78c6.jpg',
+                title: '蔡宏圖喊「沒有ESG沒有台灣」！企業有2件事非做不可',
+                url: 'https://www.cw.com.tw/article/5119250',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b1fe7fc3f57.jpg',
             }
         ]
     },
@@ -123,19 +123,19 @@ const cloudKy = {
         'slogan': '生活型態未來趨勢NO.2',
         'array': [
             {
-                title: '無法正確解讀情緒的一代？戴口罩對兒童的3大衝擊',
-                url: 'https://www.cw.com.tw/article/5118953',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6193723b042e1.jpeg',
+                title: '打完第二劑卻爆Omicron，什麼時候能出國？2022疫情五大觀察點',
+                url: 'https://www.cw.com.tw/article/5119314',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b9c4dd4cb8c.jpg',
             },
             {
-                title: '單日新增逾5萬，德國為何還在疫情中走不出來？',
-                url: 'https://www.cw.com.tw/article/5118922',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-61920f6e2daa7.jpg',
+                title: 'SARS也曾發生　實驗室感染有多常見？SOP也防不住？',
+                url: 'https://www.cw.com.tw/article/5119260',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b2a1ce9576b.jpg',
             },
             {
-                title: '什麼都快速知道　疫情帶動「即時經濟」時代，將顛覆總體經濟',
-                url: 'https://www.cw.com.tw/article/5118806',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6183613872431.jpg',
+                title: 'Omicron新型變種病毒五大QA：有多兇？在哪裡？怎麼防？',
+                url: 'https://www.cw.com.tw/article/5119074',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-61a1dae010638.jpg',
             }
         ]
     },
@@ -143,19 +143,19 @@ const cloudKy = {
         'slogan': '產業趨勢新未來 NO.3',
         'array': [
             {
-                title: '天下晨間新聞　特斯拉營收獲利破紀錄　原來是供應鏈管理大師',
-                url: 'https://www.cw.com.tw/article/5118611',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-61708a23e3a51.jpg',
+                title: '獨家調查》大加薪潮來了！四分之一CEO要幫員工調薪4%以上，你有被加嗎？',
+                url: 'https://www.cw.com.tw/article/5119288',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/purchase-reauisition-61b70835987bc.jpg',
             },
             {
-                title: '大立光股價暴跌4成，市值獲利全輸中國舜宇　蘋果供應鏈誰被搶單',
-                url: 'https://www.cw.com.tw/article/5118603',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-616f9c62058a6.jpg',
+                title: '劉德音：有人在囤貨　晶片荒助漲車價最劇，運價兩年後才會恢復',
+                url: 'https://www.cw.com.tw/article/5119298',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/purchase-reauisition-61b7119b4e7c4.jpg',
             },
             {
-                title: '庫克不愛台灣了？蘋果供應鏈染紅，陸廠51家入列、首度超越台廠',
-                url: 'https://www.cw.com.tw/article/5118561',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/purchase-reauisition-616d1f74a1241.jpg',
+                title: '規模最大的自由貿易協定RCEP來了！東協可望追上東北亞復甦速度',
+                url: 'https://www.cw.com.tw/article/5119296',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/purchase-reauisition-61b70e1cc94e1.jpg',
             }
         ]
     },
@@ -183,19 +183,19 @@ const cloudKy = {
         'slogan': '',
         'array': [
             {
-                title: '類停滯性通膨陰影　這些投資先別碰',
-                url: 'https://www.cw.com.tw/article/5118772',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-617fd4ffa804a.JPG',
+                title: '2022投資關鍵四問》通膨與升息風險壓境　上下半年標的不同',
+                url: 'https://www.cw.com.tw/article/5119304',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b735c1e716d.jpg',
             },
             {
-                title: '從泡麵到進口車都悄悄漲價　通膨已來襲，明年物價漲更猛？',
-                url: 'https://www.cw.com.tw/article/5118912',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-61922bc77f99d.JPG',
+                title: '漲價就是通貨膨脹？通膨是什麼又該怎麼進行通膨投資？',
+                url: 'https://www.cw.com.tw/article/5119371',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61baa7e897273.jpg',
             },
             {
-                title: '通膨風暴降臨　美國通膨創30年新高，升息要提前了嗎？',
-                url: 'https://www.cw.com.tw/article/5118874',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-618c938f75411.jpg',
+                title: '物價漲翻天，為什麼聯準會不敢直接升息？',
+                url: 'https://www.cw.com.tw/article/5119346',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b852740132c.jpg',
             }
         ]
     },
@@ -203,19 +203,19 @@ const cloudKy = {
         'slogan': '',
         'array': [
             {
-                title: '英國現場直擊》菜價、半導體都受衝擊！你為什麼必須關注COP26',
-                url: 'https://www.cw.com.tw/article/5118801',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-61834daaccab0.jpg',
+                title: '不能再靠肝和奴性救台灣　台積：一年半後，設備工程師不用輪大夜',
+                url: 'https://www.cw.com.tw/article/5119217',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61af360cf1eed.JPG',
             },
             {
-                title: '台積電已「自願」提交美方資訊請求書　分析：劍指中國',
-                url: 'https://www.cw.com.tw/article/5118853',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202109/article-61557ad913159.jpg',
+                title: '劉德音：有人在囤貨　晶片荒助漲車價最劇，運價兩年後才會恢復',
+                url: 'https://www.cw.com.tw/article/5119298',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/purchase-reauisition-61b7119b4e7c4.jpg',
             },
             {
-                title: '台灣半導體人才會被中國挖空？前台積技術長：未來5年是關鍵',
-                url: 'https://www.cw.com.tw/article/5118757',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6180bd4dd904e.JPG',
+                title: '為了台積電設半導體學院，人才荒為何還是難解？',
+                url: 'https://www.cw.com.tw/article/5119113',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-61a5a3549225f.jpg',
             }
         ]
     },
@@ -223,14 +223,14 @@ const cloudKy = {
         'slogan': '',
         'array': [
             {
-                title: '魷魚幣狂飆數千倍後崩盤，一場騙局？',
-                url: 'https://www.cw.com.tw/article/5118787',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202111/article-6181f186de2ed.jpg',
+                title: '數位人民幣領先全球　冬奧後挑戰美元霸權地位？',
+                url: 'https://www.cw.com.tw/article/5119303',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b81f3fa2d76.jpg',
             },
             {
-                title: 'NFT熱潮持續延燒，藝術家能分到一杯羹嗎？',
-                url: 'https://www.cw.com.tw/article/5118668',
-                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202110/article-61770ac4484ed.jpg',
+                title: 'Pantone也跟上NFT潮流　2022年度色「長春花藍」背後有元宇宙含意？',
+                url: 'https://www.cw.com.tw/article/5119254',
+                img: 'https://storage.googleapis.com/www-cw-com-tw/article/202112/article-61b1ec5790860.jpg',
             },
             {
                 title: '單月交易額上百億！台灣國寶級藝術家也賣NFT，大家在瘋什麼？',

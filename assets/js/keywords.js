@@ -56,11 +56,11 @@ var keys = [
         "article": ""
     },
     {
-        "keyEng": "DeFi Economy",
-        "keyZH": "去中心化經濟",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "keyEng": "Rethink the meaning of Capitalism",
+        "keyZH": "重塑資本主義",
+        "img": "esg.jpg",
+        "hashtag": ["ESG", "永續商模"],
+        "podcast": "https://open.firstory.me/story/ckx820d1q01fr0844ybmiijdx",
         "article": ""
     },
     {
