@@ -64,6 +64,14 @@ var keys = [
         "article": ""
     },
     {
+        "keyEng": "Sustainable Investment",
+        "keyZH": "永續投資",
+        "img": "sustainable.jpg",
+        "hashtag": ["ESG", "綠色經濟"],
+        "podcast": "https://open.firstory.me/story/ckxhdy1t20wn5092059p0r1sm",
+        "article": ""
+    },
+    {
         "keyEng": "Future Talents",
         "keyZH": "創新人才",
         "img": "",
