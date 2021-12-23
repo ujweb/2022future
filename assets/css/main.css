@@ -5058,6 +5058,13 @@ main section#subscribe .price > * {
   margin: 10px auto;
   background-color: #F5D121;
 }
+.card-item .card-text .h5 {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-bottom: 0.25em;
+  line-height: 1.25;
+  letter-spacing: -0.0025em;
+}
 .card-item .card-text ul {
   margin: 0;
   padding: 0;

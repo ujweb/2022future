@@ -58,6 +58,13 @@
                 background-color: $yellow;
             }
         }
+        .h5 {
+            margin-left: -10px;
+            margin-right: -10px;
+            padding-bottom: 0.25em;
+            line-height: 1.25;
+            letter-spacing: -0.0025em;
+        }
         ul {
             @include list(0, 0, none);
             font-size: 0;
