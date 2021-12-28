@@ -4944,6 +4944,7 @@ main section#subscribe .col-text ul li::before {
   line-height: 1.87875rem;
 }
 main section#subscribe .col-img img {
+  width: 100%;
   max-width: 430px;
   max-height: 330px;
 }
@@ -4979,8 +4980,7 @@ main section#subscribe .price > * {
   z-index: 2;
 }
 .fix-bar a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px;
   color: #fff;
   background-color: #E75128;
 }
