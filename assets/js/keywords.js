@@ -72,6 +72,14 @@ var keys = [
         "article": ""
     },
     {
+        "keyEng": "Placemaking",
+        "keyZH": "地方創生",
+        "img": "placemaking.jpg",
+        "hashtag": ["社區改造", "USR"],
+        "podcast": "https://open.firstory.me/story/ckxre8bnf2zl30942v9sr9i6t",
+        "article": ""
+    },
+    {
         "keyEng": "Future Talents",
         "keyZH": "創新人才",
         "img": "",
