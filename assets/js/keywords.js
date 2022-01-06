@@ -80,6 +80,14 @@ var keys = [
         "article": ""
     },
     {
+        "keyEng": "Podcast Trends",
+        "keyZH": "聽經濟",
+        "img": "podcast.jpg",
+        "hashtag": ["Podcast 市場", "耳朵經濟"],
+        "podcast": "https://open.firstory.me/story/cky1drflx0p1k0917orat2zva",
+        "article": ""
+    },
+    {
         "keyEng": "Future Talents",
         "keyZH": "創新人才",
         "img": "",
