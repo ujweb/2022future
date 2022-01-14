@@ -88,48 +88,24 @@ var keys = [
         "article": ""
     },
     {
-        "keyEng": "Future Talents",
-        "keyZH": "創新人才",
+        "keyEng": "Green City",
+        "keyZH": "綠色城市",
+        "img": "city.jpg",
+        "hashtag": ["低碳城市", "城市治理"],
+        "podcast": "https://open.firstory.me/story/ckybdr293el6k0858ig29cs7s",
+        "article": ""
+    },
+    {
+        "keyEng": "Cyber Justice",
+        "keyZH": "網路正義",
         "img": "",
         "hashtag": ["", "", ""],
         "podcast": "",
         "article": ""
     },
     {
-        "keyEng": "Cyber Security",
-        "keyZH": "網路安全",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": "Energy Storage",
-        "keyZH": "電動與能源",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": "Retron & Crispr",
-        "keyZH": "基因編輯",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": "Just in Case",
-        "keyZH": "管理",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
-        "article": ""
-    },
-    {
-        "keyEng": "Designing Life",
-        "keyZH": "重新設計生活",
+        "keyEng": "Inflation and Financial Management",
+        "keyZH": "通膨與財管",
         "img": "",
         "hashtag": ["", "", ""],
         "podcast": "",
