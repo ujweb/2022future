@@ -98,9 +98,9 @@ var keys = [
     {
         "keyEng": "Cyber Justice",
         "keyZH": "網路正義",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "img": "cyber-justice.jpg",
+        "hashtag": ["網路攻擊", "公民道德"],
+        "podcast": "https://open.firstory.me/story/ckyn9pwsfiyfr0a36ot4thzwg",
         "article": ""
     },
     {
