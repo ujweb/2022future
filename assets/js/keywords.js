@@ -106,9 +106,9 @@ var keys = [
     {
         "keyEng": "Inflation and Financial Management",
         "keyZH": "通膨與財管",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "podcast": "",
+        "img": "inflation.jpg",
+        "hashtag": ["綠色通膨", "資產管理"],
+        "podcast": "https://open.firstory.me/story/ckyvhsrec14un0962s61fc60j",
         "article": ""
     }
 ]
